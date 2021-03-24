@@ -1,7 +1,7 @@
 import React from 'react';
 
-function Wcard(props){
-    //console.log(props);
+function Scard(props){
+  //  console.log(props);
     return(
   <>
     <div className="cards">
@@ -20,4 +20,4 @@ function Wcard(props){
     </> );
   }
 
-  export default Wcard;
+  export default Scard;
