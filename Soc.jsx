@@ -7,7 +7,7 @@ function Soc(props){
     // console.log(props);
     return(
         <>
-        <h1 className="heading_style">How It Works</h1>
+        <h1 className="heading_style">NetFlix Series</h1>
       <Scard
         // className="randome_class"
         imgsrc={Sdata[0].imgsrc}
