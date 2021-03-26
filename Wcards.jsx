@@ -10,9 +10,6 @@ function Wcard(props){
           <div className="card__info">
             <span className="card__category">{props.title}</span>
             <h3 className="card_title">{props.sname}</h3>
-            <a href={props.href} target= "_blank">
-              <button>Watch Now</button>
-            </a>
           </div>
         </div>
       </div>

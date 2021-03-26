@@ -1,7 +1,7 @@
 import React from 'react';
 
-function Scard(props){
-  //  console.log(props);
+function Tcard(props){
+    //console.log(props);
     return(
   <>
     <div className="cards">
@@ -17,4 +17,4 @@ function Scard(props){
     </> );
   }
 
-  export default Scard;
+  export default Tcard;
