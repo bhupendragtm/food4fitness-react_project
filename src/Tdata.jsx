@@ -1,4 +1,4 @@
-const Wdata = [
+const Tdata = [
  {
      sname:"Dark0",
      imgsrc:"https://uproxx.com/wp-content/uploads/2019/05/cp5_102_unit_02442r-jpg.jpeg",
@@ -29,12 +29,6 @@ const Wdata = [
     title: "Netflix Original Series",
     links:"https://www.bhupendragautam.com.np/",
 },
-// {
-//     sname:"Dark5",
-//     imgsrc:"https://www.adweek.com/wp-content/uploads/2017/12/tv-shows-to-watch-PAGE-2018.jpg",
-//     title: "Netflix Original Series",
-//     links:"www.google.com",
-// },
 ];
 
-export default Wdata;
+export default Tdata;
