@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Bcard(props){
+function Post_card(props){
     //console.log(props);
     return(
   <>
@@ -9,6 +9,7 @@ function Bcard(props){
           <img src={props.imageUrl} className="card_img"/>
           <div className="card__info">
             <span className="card__category">{props.title}</span>
+            <h3 className="card_title">{props.pname}</h3>
             <a href={props.href} target= "_blank">
               <button>Read Now</button>
             </a>
@@ -19,4 +20,4 @@ function Bcard(props){
     </> );
   }
 
-  export default Bcard;
+  export default Post_card;

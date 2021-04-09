@@ -1,10 +1,10 @@
 import './menu.css';
 
-function Menu() {
+function Menu1() {
   return (
     <div className="App">
      <div class="navbar">
-  <a href="#home">Menu</a>
+  <a href="#">Menu</a>
   <div class="dropdown">
     <button class="dropbtn">Order Now
       <i class="fa fa-caret-down"></i>
@@ -23,7 +23,7 @@ function Menu() {
           <a href="#">Beverages</a>
           <a href="#">Gift Certificates</a>
       </div></div></div>
-  <a href="#news">Macros</a>
+  <a href="#">Macros</a>
   <div class="dropdown">
     <button class="dropbtn">Delivery FAQS
       <i class="fa fa-caret-down"></i>
@@ -44,12 +44,12 @@ function Menu() {
           <a href="#">Stocklists</a>
           <a href="#">Pickup Locations</a>
       </div></div></div>
-      <a href="#news">Contact US</a>
-      <a href="#news">Register</a>
-      <a href="#news">Login</a>
+      <a href="#">Contact US</a>
+      <a href="#">Register</a>
+      <a href="#">Login</a>
     </div>
   </div>
   );
 }
 
-export default Menu;
+export default Menu1;
