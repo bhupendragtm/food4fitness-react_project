@@ -2,53 +2,43 @@ import './menu.css';
 
 function Menu1() {
   return (
-    <div className="App">
-     <div class="navbar">
-  <a href="#">Menu</a>
-  <div class="dropdown">
-    <button class="dropbtn">Order Now
-      <i class="fa fa-caret-down"></i>
+    <header class="site-header">
+    <nav className="navbar navbar-expand navbar-dark bg-info">
+    <div className="container-fluid">
+    <a className="navbar-brand pb-2" href="#">Bootstrap 4</a>
+    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span className="navbar-toggler-icon"></span>
     </button>
-    <div class="dropdown-content">
-      {/* <div class="header">
-        <h2>Mega Menu</h2>
-      </div> */}
-    
-        <div class="column">
-          <a href="#">Sample Boxes</a>
-          <a href="#">Signature Meals</a>
-          <a href="#">Custom Meal Builder</a>
-          <a href="#">Cooked Bulk (Build Your Own)</a>
-          <a href="#">Breakfast, Health Snacks and Treats</a>
-          <a href="#">Beverages</a>
-          <a href="#">Gift Certificates</a>
-      </div></div></div>
-  <a href="#">Macros</a>
-  <div class="dropdown">
-    <button class="dropbtn">Delivery FAQS
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-    
-        <div class="column">
-          <a href="#">How We Operate</a>
-          <a href="#">Delivary Details</a>
-      </div></div></div>
-      <div class="dropdown">
-    <button class="dropbtn">Grab And Go
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-    
-        <div class="column">
-          <a href="#">Stocklists</a>
-          <a href="#">Pickup Locations</a>
-      </div></div></div>
-      <a href="#">Contact US</a>
-      <a href="#">Register</a>
-      <a href="#">Login</a>
+    <div className="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul className="navbar-nav align-self-end" id="nav">
+            <li className="nav-item">
+                <a className="nav-link" href="#">Features</a>
+            </li>
+            <li className="nav-item">
+                <a className="nav-link" href="#">Pricing</a>
+            </li>
+            <li className="nav-item">
+                <a className="nav-link" href="#">Item 4</a>
+            </li>
+            <li className="nav-item">
+                <a className="nav-link" href="#">Item 5</a>
+            </li>
+            ...
+            <li className="nav-item">
+                <a className="nav-link" href="#">Item 13</a>
+            </li>
+            <li className="nav-item dropdown d-none">
+                <a className="nav-link" href="#" id="navbarDropdownMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span className="navbar-toggler-icon"></span>
+                </a>
+                <ul className="dropdown-menu dropdown-menu-right bg-info" aria-labelledby="navbarDropdownMenu">
+                </ul>
+            </li>
+        </ul>
     </div>
-  </div>
+    </div>
+</nav>
+</header>
   );
 }
 

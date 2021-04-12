@@ -1,15 +1,15 @@
-import React from 'react';
+import React, { Component, Fragment } from 'react';
 import Bcard from "./Bcards";
 import Bdata from './Bdatas';
 
 function Benefit(){
     // console.log(props);
     return(
-        <>
+    <Fragment>
         <h1 className="heading_style">Your Key Benefit for Fitness Food</h1>
-        {Bdata.map((item)=>{return  <Bcard imgsrc={item.imageUrl} title=
-        {item.title} href={item.link} />})}
-      </> );
+        {Bdata.map((item,key)=>{return  <Bcard imgsrc={item.imageUrl} title=
+        {item.title} href={item.link} key={key} />})}
+      </Fragment> );
   }
 
   export default Benefit;

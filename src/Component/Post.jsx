@@ -14,18 +14,28 @@ export default class Post extends React.Component {
     axios.get(`http://wp.wdnexus.com/wp-json/wp/v2/posts`)
       .then(res => {
         this.setState({ 
-            posts: [res, ...this.state.posts]
+            posts: res.data
         });
       })
      
   }
 
   render() {
+    const data = this.state.posts;
     return (
-      <ul>{ this.state.posts.map (post => <>
-        {console.log(post)}<div key={post.id}></div></>)}<br />
-            
+      <ul>{ data.map((value,key) => <>
+        <div key={value.ID}>
+        <img src={value.featured_image_src.full} alt="" />
+        <h2>{value.title.rendered}</h2>
+
+        { value.acf.content.map((subValue,subKey) => <> 
+          <div key={subKey} dangerouslySetInnerHTML={{__html: subValue.acf_fc_layout == 'single_paragraphs' ? subValue.copies : ''}}></div>
+        </> 
+        )}
+        </div>
+        </>)}<br />
         </ul>
         )
       }
-      }; 
+}; 
+        
