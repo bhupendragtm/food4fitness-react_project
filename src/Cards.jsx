@@ -1,7 +1,7 @@
 import React from 'react';
 
-function Post_card(props){
-    //console.log(props);
+function Card(props){
+    console.log(props);
     return(
   <>
     <div className="cards">
@@ -10,9 +10,9 @@ function Post_card(props){
           <div className="card__info">
             <span className="card__category">{props.title}</span>
             <h3 className="card_title">{props.sname}</h3>
-            <a href={props.href}>
-              <button>Read Now</button>
-              </a>
+            <a href={props.href} target= "_blank">
+              <button>Watch Now</button>
+            </a>
           </div>
         </div>
       </div>
@@ -20,4 +20,4 @@ function Post_card(props){
     </> );
   }
 
-  export default Post_card;
+  export default Card;

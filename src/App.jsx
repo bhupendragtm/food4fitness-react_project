@@ -1,25 +1,17 @@
-import './index.css';
-import Menu1 from './Menu';
-import Menu from './Component/Menu.jsx';
-import Post from './Component/Post.jsx';
-// import Work from './Work.jsx';
-import Tmon from './Tmon.jsx';
-import Benefit from './Benefit.jsx';
-import Soc_data from './Soc.jsx';
-// import Footer from './Footer.jsx';
-// import Post from './Component/Post.txt';
+import React from 'react';
+import {add, sub, mult, div} from "./Calc";
 
-function App() {
-  return (<>
-    <Menu1 />
-    <Menu />
-    <Post />
-    {/* <Work /> */}
-    <Soc_data />
-    <Tmon />
-    <Benefit />
-
-    </>
-    );}
+function App(){
+  return(
+    <>
+<ul>
+<li>The sum of two no is {add(40, 4)}</li>
+<li> {sub(40, 4)}</li>
+<li> {mult(40, 4)}</li>
+<li> {(41, 4)}</li>
+</ul>
+</>
+);
+}
 
 export default App;
